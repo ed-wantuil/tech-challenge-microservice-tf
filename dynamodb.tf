@@ -1,4 +1,4 @@
-resource "aws_dynamodb_table" "example_table" {
+resource "aws_dynamodb_table" "payment_table" {
   name           = "payment"
   read_capacity  = 5
   write_capacity = 5
@@ -14,7 +14,7 @@ resource "aws_dynamodb_table" "example_table" {
   }
 }
 
-resource "aws_dynamodb_table" "example_table" {
+resource "aws_dynamodb_table" "delivery_table" {
   name           = "delivery"
   read_capacity  = 5
   write_capacity = 5
