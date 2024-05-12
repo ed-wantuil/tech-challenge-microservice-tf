@@ -1,7 +1,3 @@
-provider "aws" {
-  region = "us-east-1"
-}
-
 resource "aws_cognito_user_pool" "techchallenge-pool" {
   name = "meu-user-pool"
 
