@@ -1,12 +1,12 @@
 resource "aws_secretsmanager_secret" "techchallenge" {
-  name        = "techchallenge-final"
+  name        = "techchallenge-final-2"
   description = "Vault do techchallenge"
 }
 
 resource "aws_secretsmanager_secret_version" "techchallenge" {
   secret_id     = aws_secretsmanager_secret.techchallenge.id
   secret_string = jsonencode({
-    username = var.database_username
-    password = var.database_password
+    username = var.master_username
+    password = var.master_password
   })
 }

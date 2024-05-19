@@ -8,7 +8,7 @@ resource "aws_lambda_function" "auth" {
   function_name = "auth"
   handler       = "lambda_function.lambda_handler"
   runtime       = "python3.8"
-  role          = "arn:aws:iam::058264138215:role/LabRole"
+  role          = "arn:aws:iam::358266770835:role/LabRole"
 
   filename         = data.archive_file.auth.output_path
   source_code_hash = data.archive_file.auth.output_base64sha256
@@ -24,7 +24,7 @@ resource "aws_lambda_function" "create" {
   function_name = "create"
   handler       = "lambda_function.lambda_handler"
   runtime       = "python3.8"
-  role          = "arn:aws:iam::058264138215:role/LabRole"
+  role          = "arn:aws:iam::358266770835:role/LabRole"
 
   filename         = data.archive_file.create.output_path
   source_code_hash = data.archive_file.create.output_base64sha256

@@ -1,7 +1,3 @@
-provider "aws" {
-  region = "us-east-1"
-}
-
 resource "aws_db_instance" "postgres_db" {
   identifier             = "postgres-db-instance"
   engine                 = "postgres"
@@ -11,6 +7,6 @@ resource "aws_db_instance" "postgres_db" {
   username               = var.master_username
   password               = var.master_password
   skip_final_snapshot    = true
-  vpc_security_group_ids = ["sg-0afbb6ab8e72f0925"]
+  vpc_security_group_ids = ["sg-08ef7577a82a8f725"]
   publicly_accessible    = true
 }
