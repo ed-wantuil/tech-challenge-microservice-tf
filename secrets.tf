@@ -1,5 +1,5 @@
 resource "aws_secretsmanager_secret" "techchallenge" {
-  name        = "techchallenge-final"
+  name        = "techchallenge-final-2"
   description = "Vault do techchallenge"
 }
 
